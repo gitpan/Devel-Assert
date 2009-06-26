@@ -1,15 +1,20 @@
-use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
-WriteMakefile(
-    'NAME'	=> 'Devel::Assert',
-    'VERSION_FROM' => 'Assert.pm', # finds $VERSION
-#    'LIBS'	=> [''],   # e.g., '-lm' 
-#    'DEFINE'	=> '',     # e.g., '-DHAVE_SOMETHING' 
-#    'INC'	=> '',     # e.g., '-I/usr/include/other' 
-	      'PREREQ_PM' => { Carp => 0 },
-	      'dist'      => {COMPRESS => 'gzip -9',
-			      SUFFIX   => '.gz',
-			      DIST_DEFAULT => 'all tardist',
-			     },
-);
+use strict;
+use inc::Module::Install;
+
+perl_version '5.008001';
+name 'Devel-Assert';
+
+abstract_from 'lib/Devel/Assert.pod';
+author 'Sergey Aleynikov <sergey.aleynikov@gmail.com>';
+version_from 'lib/Devel/Assert.pm';
+license 'perl';
+
+test_requires 'Test::More';
+test_requires 'Test::Exception';
+
+requires 'Carp';
+requires 'Devel::Declare' => '0.005';
+
+system 'pod2text lib/Devel/Assert.pod > README';
+
+WriteAll;

@@ -1,5 +1,4 @@
-Revision history for Perl extension Devel::Assert.
+Revision history for Devel::Assert.
 
-0.01  Tue Jan  5 18:40:21 1999
-	- original version; created by h2xs 1.18
-
+0.01	2009-06-26
+		- initial release

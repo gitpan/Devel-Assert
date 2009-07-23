@@ -205,8 +205,6 @@ By default, calls C<hook_terse> with arguments described above.
 
 One subroutine - C<assert> - is exported to the caller namespace.
 
-If you place argument to assert() at more then one line, then source code line numbering will shift.
-
 Parser detail - you B<must> specify parentheses for assert call:
 
 	assert 3 < 5;	#wrong!

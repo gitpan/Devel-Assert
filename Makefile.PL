@@ -13,7 +13,7 @@ test_requires 'Test::More';
 test_requires 'Test::Exception';
 
 requires 'Carp';
-requires 'Devel::Declare' => '0.005';
+requires 'Devel::Declare' => '0.005007';
 
 system 'pod2text lib/Devel/Assert.pod > README';
 

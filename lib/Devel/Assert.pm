@@ -13,7 +13,7 @@ my $cond_counter = 0;
 $Carp::Internal{'Devel::Assert'}++;
 $Carp::Internal{'Devel::Declare'}++;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my $fail_actions = {
 	verbose			=> 0,

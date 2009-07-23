@@ -13,9 +13,9 @@ no_index:
     - inc
     - t
 requires:
-  Devel::Declare: 0.005
+  Devel::Declare: 0.005007
   Carp: 0
   perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.02
